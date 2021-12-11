@@ -13,7 +13,7 @@
 body {
     color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
-    background-color: rgb(10, 10, 41);
+    background-color: #333
 }
 
 header {
@@ -39,6 +39,10 @@ header {
     font-size: 36px;
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px 50px 30px;
+    background: #73AD21;
+    padding: 20px;
+    width: 400px;
   }
   
   header a {
@@ -48,7 +52,6 @@ header {
   
   header nav {
     margin: 7px 0;
-    text-decoration: underline;
   }
   
   header nav ul {
@@ -70,26 +73,25 @@ header {
     text-decoration: underline;
   }
   .hero {
-    background-image: url('../img/grandteton.jpg');
+    background-image: url('../img/gradient.png');
     background-size: cover;
     background-position: center;
-    opacity: 0.5;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-    height: 25vh;
-    font-size: 40px;
-    font-weight: bold;
+    height: 400px;
+    width: 100%;
+    margin-bottom: 25px;
+    position: relative;
   }
+.hero p {
+  font-size: 3vw;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+}
+.big-box {
+  display: flex;
+}
 
-  .hero p {
-      position: relative;
-      left: 650px;
-      top: 175px;
-      color: black;
-      background-color: rgb(40, 99, 100);
-      opacity: 1;
-  }
+
+
+  
