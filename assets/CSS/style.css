@@ -90,7 +90,42 @@ header {
 }
 .big-box {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
+
+.big-box >h2{
+  flex:0 0 23%;
+  margin-left: 15px;
+  padding-left: 15px;
+}
+.big-box >p {
+  flex: 0 0 73%;
+}
+
+.project-container{
+  flex: 0 0 73%;
+}
+
+.main-image {
+  height: 8rem;
+}
+
+.sub-image {
+  height: 4rem;
+}
+
+.sub-project {
+  
+}
+
+
+/* .column-1 { */
+  /* width: 20%; */
+/* } */
+/* .column-2 { */
+  /* width: 70%; */
+/* } */
 
 
 
