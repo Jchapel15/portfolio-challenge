@@ -25,7 +25,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-image: url('../assets/niceHeader.png');
+    background-image: url('../img/niceHeader.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -68,4 +68,28 @@ header {
   
   header nav ul li a:hover {
     text-decoration: underline;
+  }
+  .hero {
+    background-image: url('../img/grandteton.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    height: 25vh;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .hero p {
+      position: relative;
+      left: 650px;
+      top: 175px;
+      color: black;
+      background-color: rgb(40, 99, 100);
+      opacity: 1;
   }
