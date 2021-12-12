@@ -1,7 +1,6 @@
 :root {
-    --primary-color: black;
-    --secondary-color: Blue;
-    --tertiary-color: lavender;
+    --background-color: lightblue;
+    --primary-color: Blue;
 }
 
 * {
@@ -10,11 +9,11 @@
     padding: 0;
 }
 
-body {
-    color: var(--tertiary-color);
-    font-family: Helvetica, Arial, sans-serif;
-    background-color: #333
+a {
+  color: white;
 }
+
+/*header styling*/
 
 header {
     padding: 20px 35px;
@@ -40,9 +39,9 @@ header {
     color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px 50px 30px;
-    background: #73AD21;
     padding: 20px;
     width: 400px;
+    
   }
   
   header a {
@@ -60,23 +59,33 @@ header {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    margin-top: 20px;
   }
   
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 2vw;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
   }
   
   header nav ul li a:hover {
     text-decoration: underline;
   }
+
+/*body styling*/
+
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    position: relative;
+}
+
   .hero {
     background-image: url('../img/gradient.png');
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 350px;
     width: 100%;
     margin-bottom: 25px;
     position: relative;
@@ -88,44 +97,138 @@ header {
   right: 0;
   padding: 20px;
 }
-.big-box {
+
+section{
+  display: flex;
+  flex-grow: 1;
+}
+
+section article{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  width: 1000px;
 }
 
-.big-box >h2{
-  flex:0 0 23%;
-  margin-left: 15px;
-  padding-left: 15px;
-}
-.big-box >p {
-  flex: 0 0 73%;
-}
-
-.project-container{
-  flex: 0 0 73%;
+.leftside{
+  border-right: 5px solid black;
+  min-height: 15px;
+  min-width: 150px;
+  padding: 5px;
+  margin: 5px;
+  text-align: right;
 }
 
-.main-image {
-  height: 8rem;
+section div p {
+  padding: 5px;
+  margin: 5px;
+} 
+
+.primary-work{
+  border: 5px solid black;
+  margin: 5px;
+  padding: 5px;
+  flex-grow: 1;
+  position: relative;
+  width: 97%;
+  min-height: 400px;
+  background-image: url("../img/run-buddy.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
-.sub-image {
-  height: 4rem;
+.subflex {
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  background-color: darkgrey;
+  color: var(--primary-color);
+  padding: 10px;
 }
 
-.sub-project {
-  
+.secondary-work1{
+    display: flex;
+    border: 5px solid grey;
+    min-width: 100px;
+    min-height: 100px;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    width: 49%;
+    background-image: url("../img/HTML.jpg");
+    background-size: cover;
+    background-position: center;
 }
 
+.secondary-work2 {
+  display: flex;
+  border: 5px solid grey;
+  min-width: 100px;
+  min-height: 100px;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  width: 49%;
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
 
-/* .column-1 { */
-  /* width: 20%; */
-/* } */
-/* .column-2 { */
-  /* width: 70%; */
-/* } */
+.secondary-work3 {
+  display: flex;
+  border: 5px solid grey;
+  min-width: 100px;
+  min-height: 100px;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  width: 49%;
+  background-image: url("../images/robotgladiators.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.secondary-work4{
+  display: flex;
+  border: 5px solid grey;
+  min-width: 100px;
+  min-height: 100px;
+  margin: 5px;
+  padding: 5px;
+  position: relative;
+  width: 49%;
+  background-image: url("../images/construction.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.contactme  {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.contactme ul {
+  list-style-type: none;
+}
+
+.contactme ul li {
+  font-size: 24px;
+  display: inline-block;
+  margin-left: 50px;
+  top: 50px;
+  margin: 20px;
+}
+
+.contactme ul li a {
+  color: black;
+}
+
+.contactme ul li:hover {
+  text-decoration: underline;
+  border-radius: 15px;
+}
+
+footer {
+  text-align: center;
+}
 
 
 
