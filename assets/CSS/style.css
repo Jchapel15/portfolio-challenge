@@ -81,7 +81,7 @@ header {
 }
   .hero {
     background-image: url('../img/Michigan-State-University.jpg');
-    background-size: 114%;
+    background-size: 123%;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -92,7 +92,7 @@ header {
 
   #family-image {
     height: auto;
-    width: 33%;
+    width: 30%;
     position: relative;
 
   }
